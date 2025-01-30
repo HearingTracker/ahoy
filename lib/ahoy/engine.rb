@@ -9,7 +9,7 @@ module Ahoy
       next unless Ahoy.quiet
 
       # Parse PATH_INFO by assets prefix
-      AHOY_PREFIX = "/ahoy/".freeze
+      AHOY_PREFIX = "/blimey/".freeze
 
       # Just create an alias for call in middleware
       Rails::Rack::Logger.class_eval do
