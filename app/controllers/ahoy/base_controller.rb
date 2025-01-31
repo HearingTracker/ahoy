@@ -16,7 +16,7 @@ module Ahoy
     protected
 
     def ahoy
-      @ahoy ||= Ahoy::Tracker.new(controller: self, api: true)
+      @ahoy ||= Ahoy::Tracker.new(controller: self, api: true, visit_token: request.params[:visit_token])
     end
 
     def check_params
